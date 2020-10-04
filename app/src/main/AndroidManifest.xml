@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jai.hostelappwarden">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hostel"
+        android:label="Warden HostelHub"
+        android:roundIcon="@drawable/hostel"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".SeenActivity"
+            android:screenOrientation="sensorPortrait"/>
+
+
+        <activity android:name=".BroadcastActivity"
+            android:screenOrientation="sensorPortrait"></activity>
+
+
+        <activity android:name=".WardenRequestResponseActivity"
+            android:screenOrientation="sensorPortrait"/>
+
+        <activity
+            android:name=".MessActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".LoggedActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".WardenRequestService"
+            android:enabled="true"
+            android:stopWithTask="false" />
+
+        <receiver
+            android:name=".SensorRestarterBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped">
+            <intent-filter>
+                <action android:name="ac.in.ActivityRecognition.RestartSensor" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

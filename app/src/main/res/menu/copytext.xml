@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item android:id="@+id/textcopymenu" android:title="Copy" android:icon="@drawable/sheet" app:showAsAction="always"/>
+
+    <item android:id="@+id/seenmenu" android:title="Seens" android:icon="@drawable/miscellaneous" app:showAsAction="always"/>
+
+</menu>

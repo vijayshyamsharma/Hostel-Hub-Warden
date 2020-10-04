@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containeritem"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="@drawable/shape2">
+
+    <TextView
+        android:id="@+id/studentname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Student Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/purpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="PURPOSE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentname1" />
+
+    <TextView
+        android:id="@+id/purposevalue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:maxLines="3"
+        android:text="shopping outtime"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/purpose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/purpose" />
+
+    <TextView
+        android:id="@+id/hostel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="HOSTEL"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purposevalue" />
+
+    <TextView
+        android:id="@+id/hostelvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="hostel 1"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hostel"
+        app:layout_constraintStart_toEndOf="@+id/hostel" />
+
+    <TextView
+        android:id="@+id/outtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="TIME"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hostel" />
+
+    <TextView
+        android:id="@+id/touttimevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:10 AM"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/outtime"
+        app:layout_constraintStart_toStartOf="@+id/hostelvalue" />
+
+    <TextView
+        android:id="@+id/outdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="DATE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outtime" />
+
+    <TextView
+        android:id="@+id/outdatevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20 april 2020"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/outdate"
+        app:layout_constraintStart_toStartOf="@+id/touttimevalue" />
+
+    <TextView
+        android:id="@+id/useremail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Email Id"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outdate" />
+
+    <TextView
+        android:id="@+id/useremailvalue1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:maxLines="2"
+
+        android:text="vijay@gmail.com"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/useremail1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/outdatevalue" />
+
+    <TextView
+        android:id="@+id/transid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Trans.ID"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/useremail1" />
+
+    <TextView
+        android:id="@+id/transidvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11ffbb33"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/transid"
+        app:layout_constraintStart_toStartOf="@+id/useremailvalue1" />
+
+    <Button
+        android:id="@+id/denybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/deny1"
+        android:text="Deny"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/acceptbutton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7123"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/acceptbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/accept"
+        android:text="Accept"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/denybutton"
+        app:layout_constraintTop_toBottomOf="@+id/textView7123"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/wardenresponse1"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:text="STATUS"
+
+        android:visibility="gone"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7123"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/reqtime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Req.time"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transid" />
+
+
+    <TextView
+        android:id="@+id/textView7123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="reply \ntime"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reqtime1" />
+
+
+    <TextView
+        android:id="@+id/requesttime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="12:10 am"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/reqtime1"
+        app:layout_constraintStart_toStartOf="@+id/transidvalue" />
+
+
+    <TextView
+        android:id="@+id/grantedtime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="12.15 am"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView7123"
+        app:layout_constraintStart_toStartOf="@+id/requesttime1" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/permission" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

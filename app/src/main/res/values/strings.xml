@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HostelHub Warden</string>
+
+    <string-array name="weekdays">
+
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+
+    </string-array>
+    <string name="title_activity_announcement">AnnouncementActivity</string>
+</resources>

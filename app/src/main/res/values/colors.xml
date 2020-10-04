@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e49bb7</color>
+    <color name="colorPrimaryDark">#e49bb7</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="backg">#f5c1ee</color>
+
+    <color name="accept">#32964d</color>
+    <color name="deny1">#e85d58</color>
+
+    <color name="yellow">#f2fe52</color>
+    <color name="pinkish">#f09bbb</color>
+
+
+    <color name="select">#97b5e6</color>
+
+    <color name="bluetick">#4fc3f7</color>
+</resources>
